@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Мишка: Вязание на заказ</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__logo">
+        <img src="img/logo-mishka.svg" alt="Mishka" class="page-header__logotype">
+      </div>
+      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+        <div class="main-navigation__container">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Каталог товаров</a></li>
+            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Вязание на заказ</a></li>
+            <li class="main-navigation__item main-navigation__item--hidden"><a href="#" class="main-navigation__link">Новые поступления</a></li>
+            <li class="main-navigation__item main-navigation__item--hidden"><a href="#" class="main-navigation__link">Распродажа</a></li>
+          </ul>
+          <section class="main-navigation__userblock">
+            <div class="main-navigation__search">
+              <form action="#" class="main-navigation__search-form">
+                <label for="search" class="main-navigation__search-label">Поиск по сайту</label>
+                <input type="search" name="search" id="search" class="main-navigation__search-field">
+              </form>
+            </div>
+            <div class="main-navigation__cart">Корзина: пока пуста</div>
+          </section>
+          <div class="main-navigation__delivery">
+            <a href="#" class="main-navigation__link">Бесплатная доставка по России</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="intro">
+      <div class="intro__container">
+        <h1 class="intro__heading">Милые штучки ручной работы для дома</h1>
+      </div>
+    </section>
+    <section class="order-list">
+      <div class="order-list__container">
+        <p class="order-list__heading">Мы будем рады воплотить в жизнь ваши пожелания!<br>Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <form action="#" class="order-form">
+            <section class="order-form__section order-form__section--white">
+              <div class="order-form__title">Тип</div>
+              <div class="order-form__radios">
+                <div class="order-form__group">
+                  <input type="radio" name="type" id="acessories" class="order-form__radio" checked>
+                  <label for="acessories" class="order-form__label">Аксессуар для интерьера</label>
+                </div>
+                <div class="order-form__group">
+                  <input type="radio" name="type" id="toy" class="order-form__radio">
+                  <label for="toy" class="order-form__label">Детская игрушка</label>
+                </div>
+              </div>
+            </section>
+            <section class="order-form__section order-form__section--grey">
+              <div class="order-form__title">Цвет</div>
+              <div class="order-form__checkboxes">
+                <div class="order-form__group">
+                  <input type="checkbox" name="white" id="white" class="order-form__checkbox" checked>
+                  <label for="white" class="order-form__label">Белый</label>
+                </div>
+                <div class="order-form__group">
+                  <input type="checkbox" name="grey" id="grey" class="order-form__checkbox" checked>
+                  <label for="grey" class="order-form__label">Серый</label>
+                </div>
+                <div class="order-form__group">
+                  <input type="checkbox" name="tiffany" id="tiffany" class="order-form__checkbox">
+                  <label for="tiffany" class="order-form__label">&laquo;Тиффани&raquo;</label>
+                </div>
+                <div class="order-form__group">
+                  <input type="checkbox" name="black" id="black" class="order-form__checkbox">
+                  <label for="black" class="order-form__label">Черный</label>
+                </div>
+                <div class="order-form__group">
+                  <input type="checkbox" name="pink" id="pink" class="order-form__checkbox">
+                  <label for="pink" class="order-form__label">Розовый</label>
+                </div>
+                <div class="order-form__group">
+                  <input type="checkbox" name="orange" id="orange" class="order-form__checkbox">
+                  <label for="orange" class="order-form__label">Оранжевый</label>
+                </div>
+              </div>
+            </section>
+            <section class="order-form__section order-form__section--white">
+              <div class="order-form__title">ФИО</div>
+              <div class="ordef-form__inputs">
+                <div class="order-form__group">
+                  <label for="surname" class="order-form__label">Фамилия:</label>
+                  <input type="text" name="surname" id="surname" class="order-form__input" placeholder="Укажите фамилию" required>
+                </div>
+                <div class="order-form__group">
+                  <label for="name" class="order-form__label">Имя:</label>
+                  <input type="text" name="name" id="name" class="order-form__input" placeholder="Введите ваше имя">
+                </div>
+                <div class="order-form__group">
+                  <label for="middlename" class="order-form__label">Отчество:</label>
+                  <input type="text" name="middlename" id="middlename" class="order-form__input" placeholder="Отчество, если желаете">
+                </div>
+              </div>
+            </section>
+            <section class="order-form__section order-form__section--grey">
+              <div class="order-form__title">Тел</div>
+              <div class="order-form__group">
+                <input type="tel" name="tel" id="tel" class="order-form__input" placeholder="+7 XXX XX XX" required>
+              </div>
+              <div class="order-form__title">e-mail</div>
+              <div class="order-form__group">
+                <input type="email" name="email" id="email" class="order-form__input" placeholder="Мы не будем спамить, честно!" required>
+              </div>
+            </section>
+            <section class="order-form__section order-form__secrion--white">
+              <div class="order-form__title">Доп</div>
+              <div class="order-form__group">
+                <textarea name="wishes" id="wishes" cols="30" rows="10" class="order-form__textarea" placeholder="Опишите ваши пожелания к заказу"></textarea>
+              </div>
+            </section>
+            <section class="order-form__section order-form__section--white">
+              <div class="order-form__group">
+                <button type="submit" class="order-form__button btn">Отправить заказ</button>
+                <div class="order-form__requirement">
+                  <span class="order-form__requirement-text">Все поля являются обязательными</span>
+                </div>
+              </div>
+            </section>
+          </form>
+      </div>
+    </section>
+
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <div class="main-footer__logo">
+        <img src="img/footer-logo.svg" alt="Mishka" class="main-footer__logotype">
+      </div>
+      <div class="main-footer__social">
+        <a href="#" class="main-footer__social-link">Инстаграмм</a>
+        <a href="#" class="main-footer__social-link">Фейсбук</a>
+        <a href="#" class="main-footer__social-link">Твиттер</a>
+      </div>
+      <div class="main-footer__copyright">
+        <span class="main-footer__copyright-text">Разработано</span>
+        <a href="#" class="main-footer__copyright-link">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
