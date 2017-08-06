@@ -1,12 +1,18 @@
 .page-header {
+  min-height: 79px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 10;
+}
 
-  &__container {
-    .container();
-  }
+@media @tablet-widths {
+  .page-header {
+    position: relative;
+    border-bottom: none;
 
-  &__logo {
-    padding-top: 22px;
-    padding-bottom: 12px;
-    text-align: center;
+    &__container {
+      .container();
+      max-width: 668px;
+    }
   }
 }

@@ -22,6 +22,7 @@
     margin-bottom: 8px;
     font-size: @font-size-heading-mobile;
     line-height: @line-height-heading-mobile;
+    font-family: "Verdana","Arial",sans-serif;
     color: @color-black;
   }
 
@@ -80,6 +81,65 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+}
 
 
+@media @tablet-widths {
+  .week-offer {
+    position: relative;
+    padding-bottom: 75px;
+
+    &__container {
+      position: relative;
+    }
+
+    &__heading {
+      margin: 0;
+      font-size: @font-size-heading-tablet;
+      line-height: @line-height-heading-tablet;
+      font-family: "Verdana","Arial",sans-serif;
+      color: @color-black;
+    }
+
+    &__title {
+      position: absolute;
+      top: 3.5%;
+      right: 18px;
+      width: 80px;
+      text-align: center;
+    }
+
+    &__wrapper {
+      max-width: 285px;
+    }
+
+    &__description {
+      font-size: @font-size-medium;
+      line-height: @line-height-medium;
+      padding-top: 50px;
+      padding-bottom: 35px;
+    }
+
+    &__table {
+      font-size: @font-size-table;
+      line-height: @line-height-table;
+      margin-bottom: 61px;
+    }
+
+    .week-offer__table-col {
+      padding-top: 10px;
+      padding-bottom: 9px;
+    }
+
+    &__image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &__price {
+      margin-bottom: 35px;
+      font-size: @font-size-big;
+    }
+  }
 }
