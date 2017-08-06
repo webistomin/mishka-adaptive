@@ -9,6 +9,7 @@
     margin-bottom: 30px;
     font-size: @font-size-heading-mobile;
     line-height: @line-height-heading-mobile;
+    font-family: "Verdana","Arial", sans-serif;
     text-align: left;
     color: @color-black;
   }
@@ -57,5 +58,52 @@
     line-height: @line-height-tiny;
     color: @color-black;
     font-weight: 700;
+  }
+}
+
+@media @tablet-widths {
+  .features {
+
+    &__heading {
+      padding-top: 57px;
+      font-size: @font-size-heading-tablet;
+      line-height: @line-height-heading-tablet;
+      margin-bottom: 46px;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 260px;
+
+      &--first {
+        order: 1;
+      }
+
+      &--second {
+        order: 3;
+      }
+
+      &--third {
+        order: 5;
+      }
+
+      &--fourth {
+        order: 2;
+      }
+
+      &--fifth {
+        order: 4;
+      }
+
+      &--sixth {
+        order: 6;
+      }
+    }
   }
 }
