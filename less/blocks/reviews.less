@@ -75,7 +75,120 @@
     &--next {
       background-image: url("../img/icon-right-arrow.svg");
     }
+  }
+}
+
+@media @tablet-widths {
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 185px;
 
 
+    &__container {
+      &--flex {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+
+    &__heading {
+      order: 1;
+      margin-bottom: 44px;
+      font-size: @font-size-heading-tablet;
+      line-height: @line-height-heading-tablet;
+      font-family: "Verdana", "Arial", sans-serif;
+    }
+
+    &__write {
+      order: 2;
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+
+    &__quote {
+      order: 3;
+      margin-bottom: 0;
+    }
+
+    &__buttons {
+      width: 167px;
+      font-size: 0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    &__button {
+      margin-bottom: 0;
+      border: none;
+    }
+
+    &__text {
+      margin-bottom: 4px;
+    }
+
+    &__author {
+      font-size: @font-size-medium;
+      line-height: @line-height-small;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    padding-bottom: 200px;
+
+    &__container {
+      position: relative;
+
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 459px;
+        left: 0;
+        top: -78px;
+        background-image: url("../img/review@1x.jpg");
+        background-repeat: no-repeat;
+        background-size: 350px 457px;
+        z-index: -1;
+      }
+    }
+
+    &::after {
+      background-size: contain;
+    }
+
+    &__heading {
+      font-size: @font-size-heading-desktop;
+      line-height: @line-height-heading-desktop;
+    }
+
+    &__container {
+      width: 875px;
+      padding-left: 175px;
+    }
+
+    &__text {
+      margin-bottom: 45px;
+    }
+
+    &__link {
+      font-size: @font-size-medium;
+    }
+
+    &__buttons {
+      width: 175px;
+    }
+
+    &__write {
+      box-sizing: border-box;
+      width: 175px;
+      margin-top: 7px;
+    }
   }
 }

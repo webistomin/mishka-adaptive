@@ -63,6 +63,7 @@
 
 @media @tablet-widths {
   .features {
+    margin-bottom: 78px;
 
     &__heading {
       padding-top: 57px;
@@ -79,7 +80,7 @@
     }
 
     &__item {
-      width: 260px;
+      width: 50%;
 
       &--first {
         order: 1;
@@ -104,6 +105,34 @@
       &--sixth {
         order: 6;
       }
+    }
+
+    &__description {
+      font-size: @font-size-features;
+      line-height: @line-height-small;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .features {
+
+    &__heading {
+      font-size: @font-size-heading-desktop;
+      line-height: @line-height-heading-desktop;
+    }
+
+    &__container {
+      width: 875px;
+      padding-left: 175px;
+    }
+
+    &__items {
+      justify-content: flex-start;
+    }
+
+    &__item {
+      width: 350px;
     }
   }
 }

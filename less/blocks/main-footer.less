@@ -67,3 +67,39 @@
     background-image: url("../img/htmlacademy.svg");
   }
 }
+
+@media @tablet-widths {
+  .main-footer {
+    margin-top: 58px;
+    padding-top: 50px;
+    padding-bottom: 48px;
+
+    &__container {
+      &--flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center
+      }
+    }
+
+    &__logo {
+      display: block;
+      width: 170px;
+    }
+
+    &__social {
+      width: 150px;
+      padding: 0;
+      border: none;
+    }
+
+    &__copyright {
+      padding: 0;
+    }
+
+    &__copyright-text {
+      padding-right: 24px;
+    }
+  }
+}

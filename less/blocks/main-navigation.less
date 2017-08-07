@@ -255,8 +255,8 @@
       position: relative;
       display: block;
       font-weight: 700;
-      font-size: 17px;
-      line-height: 1.412em;
+      font-size: @font-size-navigation;
+      line-height: @line-height-small;
       color: #000;
       padding: 32px 0 32px 82px;
       text-align: right;
@@ -273,6 +273,78 @@
 
     &__delivery-link {
       color: @color-black;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .main-navigation {
+    &__logo {
+      flex-grow: 1;
+      justify-content: flex-start;
+      align-self: center;
+      padding: 0;
+      border-top: none;
+    }
+
+    &__logotype {
+      vertical-align: middle;
+    }
+
+    &__list {
+      order: -1;
+      width: 450px;
+    }
+
+    &__item {
+      &--border {
+        border-right: 1px solid #ececec;
+      }
+
+      &--right {
+        text-align: right;
+      }
+    }
+
+    &__link {
+     &--main {
+       width: 184px;
+       padding-top: 32px;
+       padding-bottom: 32px;
+       font-size: @font-size-navigation;
+       line-height: @line-height-small;
+     }
+    }
+
+    &__extrablock {
+      display: flex;
+      order: 2;
+    }
+
+    &__extrablock-item {
+      &--margin {
+        margin: 0;
+      }
+    }
+
+    &__extra-link {
+      display: block;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      font-size: @font-size-small;
+      line-height: @line-height-small;
+      font-weight: 700;
+      color: @color-black;
+
+      &--first {
+        width: 184px;
+      }
+
+      &--second {
+        box-sizing: border-box;
+        width: 184px;
+        padding-left: 30px;
+      }
     }
   }
 }

@@ -7,6 +7,7 @@
     margin-bottom: 36px;
     font-size: @font-size-heading-mobile;
     line-height: @line-height-heading-mobile;
+    font-family: "Verdana", "Arial", sans-serif;
     text-align: left;
     color: @color-black;
   }
@@ -47,5 +48,121 @@
     background-repeat: no-repeat,no-repeat;
     background-position: center,center;
   }
+}
 
+@media @tablet-widths {
+  .contacts {
+    padding-top: 70px;
+
+    &__container {
+      &--flag {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 46.68px;
+          height: 81.691px;
+          background-color: transparent;
+          background-image: url("../img/icon-flag.svg");
+          background-repeat: no-repeat;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+
+    &__heading {
+      margin: 0;
+      margin-bottom: 60px;
+      font-size: @font-size-heading-tablet;
+      line-height: @line-height-heading-tablet;
+      font-family: "Verdana", "Arial", sans-serif;
+    }
+
+    tbody {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__table-row {
+      width: 334px;
+    }
+
+    &__table-col {
+      font-size: @font-size-medium;
+      line-height: @line-height-medium;
+
+      &--padding {
+        padding: 0;
+        padding-right: 26px;
+      }
+    }
+
+    &__map {
+      min-height: 457px;
+      margin-top: 60px;
+      margin-bottom: 66px;
+      background-image: url("../img/icon-map-pin.svg"),url("../img/map-tablet@1x.jpg");
+      background-repeat: no-repeat,no-repeat;
+      background-position: center,center;
+      background-size: auto, cover;
+    }
+
+    &__popup-btn {
+      width: 230px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .contacts {
+    position: relative;
+
+
+    &__container {
+      width: 875px;
+      padding-left: 175px;
+      &--flag {
+        padding-top: 72px;
+        &::after {
+          left: 60px;
+          top: 72px;
+        }
+      }
+    }
+
+    &__heading {
+      font-size: @font-size-heading-desktop;
+      line-height: @line-height-heading-desktop;
+    }
+
+    &__table {
+      margin-bottom: 85px;
+    }
+
+    tbody {
+      display: table;
+    }
+
+    &__table-col {
+      &--padding {
+        padding-top: 38px;
+      }
+    }
+
+    &__map {
+      margin: 0;
+      position: absolute;
+      width: 525px;
+      bottom: 0;
+      left: 50%;
+    }
+
+    &__popup-btn {
+      margin: 0;
+      margin-bottom: 105px;
+    }
+  }
 }

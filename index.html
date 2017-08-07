@@ -15,17 +15,17 @@
           <picture>
             <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Mishka" title="Mishka">
+            <img class="main-navigation__logotype" src="img/logo-mobile.svg" alt="Mishka" title="Mishka">
           </picture>
         </div>
           <button class="main-navigation__toggler">Открыть меню</button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="#" class="main-navigation__link main-navigation__link--main">Каталог товаров</a></li>
-            <li class="main-navigation__item"><a href="#" class="main-navigation__link main-navigation__link--main">Вязание на заказ</a></li>
+            <li class="main-navigation__item main-navigation__item--border"><a href="#" class="main-navigation__link main-navigation__link--main">Каталог товаров</a></li>
+            <li class="main-navigation__item main-navigation__item--right"><a href="#" class="main-navigation__link main-navigation__link--main">Вязание на заказ</a></li>
           </ul>
           <ul class="main-navigation__extrablock">
-            <li class="main-navigation__item main-navigation__item--hidden"><a href="#" class="main-navigation__link">Новые поступления</a></li>
-            <li class="main-navigation__item main-navigation__item--hidden"><a href="#" class="main-navigation__link">Распродажа</a></li>
+            <li class="main-navigation__item main-navigation__extrablock-item main-navigation__item--hidden"><a href="#" class="main-navigation__link main-navigation__extra-link main-navigation__extra-link--first">Новые поступления</a></li>
+            <li class="main-navigation__item main-navigation__extrablock-item main-navigation__extrablock-item--margin main-navigation__item--hidden"><a href="#" class="main-navigation__link main-navigation__extra-link main-navigation__extra-link--second">Распродажа</a></li>
           </ul>
           <ul class="main-navigation__userblock">
             <li class="main-navigation__item">
@@ -96,28 +96,28 @@
         <h1 class="features__heading">Коротко о нас:</h1>
         <div class="features__items">
           <div class="features__item features__item--first">
-            <p class="features__description">Экологически чистые материалы</p>
+            <p class="features__description">Экологически <br> чистые материалы</p>
           </div>
           <div class="features__item features__item--second">
-            <p class="features__description">Скандинавский стиль по российской цене</p>
+            <p class="features__description">Скандинавский стиль <br> по российской цене</p>
           </div>
           <div class="features__item features__item--third">
-            <p class="features__description">Увеличивает лайки на фотографиях</p>
+            <p class="features__description">Увеличивает лайки <br> на фотографиях</p>
           </div>
           <div class="features__item features__item--fourth">
-            <p class="features__description">Связано вручную с любовью и умилением</p>
+            <p class="features__description">Связано вручную с <br> любовью и умилением</p>
           </div>
           <div class="features__item features__item--fifth">
-            <p class="features__description">Поддержка отечественного производителя</p>
+            <p class="features__description">Поддержка отечественного <br> производителя</p>
           </div>
           <div class="features__item features__item--sixth">
-            <p class="features__description">Поставляется в подарочной упаковке</p>
+            <p class="features__description">Поставляется в <br> подарочной упаковке</p>
           </div>
         </div>
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__container">
+      <div class="reviews__container reviews__container--flex">
         <h1 class="reviews__heading">Отзывы</h1>
         <blockquote class="reviews__quote">
           <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
@@ -127,12 +127,12 @@
         <div class="reviews__buttons">
           <button class="reviews__button reviews__button--prev">Назад</button>
           <button class="reviews__button reviews__button--next">Вперед</button>
-          <a href="#" class="reviews__write btn">Написать</a>
         </div>
+          <a href="#" class="reviews__write btn">Написать</a>
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__container">
+      <div class="contacts__container contacts__container--flag">
         <h1 class="contacts__heading">Контакты</h1>
         <table class="contacts__table">
           <tr class="contacts__table-row">
@@ -152,9 +152,9 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__container">
+    <div class="main-footer__container main-footer__container--flex">
       <div class="main-footer__logo">
-        <img src="img/footer-logo.svg" alt="Mishka" class="main-footer__logotype">
+        <img src="img/logo-footer.svg" alt="Mishka" class="main-footer__logotype">
       </div>
       <div class="main-footer__social">
         <a href="#" class="main-footer__social-link main-footer__social-link--insta">Инстаграмм</a>

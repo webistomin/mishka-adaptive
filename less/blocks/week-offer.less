@@ -143,3 +143,47 @@
     }
   }
 }
+
+@media @desktop-widths {
+  .week-offer {
+
+  padding-bottom: 96px;
+
+    &::after {
+      background-size: contain;
+    }
+
+
+
+    &__container {
+      width: 875px;
+      padding-left: 175px;
+    }
+
+    &__heading {
+      font-size: @font-size-heading-desktop;
+      line-height: @line-height-heading-desktop;
+    }
+
+    &__title {
+      top: 2.5%;
+      left: 50px;
+    }
+
+    &__description {
+      padding-bottom: 70px;
+    }
+
+    &__table {
+      margin-bottom: 100px;
+    }
+
+    &__image {
+      z-index: -1;
+      top: -40px;
+      right: -5px;
+    }
+
+
+  }
+}
