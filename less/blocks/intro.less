@@ -71,8 +71,10 @@
         }
     }
 
-    &:hover {
-      transform: translateY(-5px);
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
     }
   }
 
@@ -86,6 +88,10 @@
     font-weight: 700;
     text-align: left;
     color: @color-white;
+
+    &:active {
+      color: rgba(255,255,255,0.3);
+    }
   }
 }
 
@@ -135,6 +141,10 @@
 
     &__item {
       width: 50%;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
   }
 }

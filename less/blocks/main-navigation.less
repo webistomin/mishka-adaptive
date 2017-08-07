@@ -100,6 +100,14 @@
       text-align: left;
       color: @color-black;
       background-color: @color-white;
+
+      &:hover {
+        color: rgba(0,0,0,0.6);
+      }
+
+      &:active {
+        color: rgba(0,0,0,0.3);
+      }
     }
 
     &__search {
@@ -166,6 +174,16 @@
       border-top: none;
     }
 
+    &__logotype {
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
     &__toggler {
       display: none;
     }
@@ -188,6 +206,14 @@
         font-weight: 700;
         color: @color-black;
         border-bottom: none;
+      }
+
+      &:hover {
+        color: rgba(0,0,0,0.6);
+      }
+
+      &:active {
+        color: rgba(0,0,0,0.3);
       }
     }
 
