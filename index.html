@@ -21,7 +21,7 @@
           <button class="main-navigation__toggler">Открыть меню</button>
           <ul class="main-navigation__list">
             <li class="main-navigation__item main-navigation__item--border"><a href="#" class="main-navigation__link main-navigation__link--main">Каталог товаров</a></li>
-            <li class="main-navigation__item main-navigation__item--right"><a href="#" class="main-navigation__link main-navigation__link--main">Вязание на заказ</a></li>
+            <li class="main-navigation__item main-navigation__item--right"><a href="#" class="main-navigation__link main-navigation__link--main main-navigation__link--right">Вязание на заказ</a></li>
           </ul>
           <ul class="main-navigation__extrablock">
             <li class="main-navigation__item main-navigation__extrablock-item main-navigation__item--hidden"><a href="#" class="main-navigation__link main-navigation__extra-link main-navigation__extra-link--first">Новые поступления</a></li>
@@ -145,7 +145,7 @@
           </tr>
         </table>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map" id="map"></div>
         <div class="contacts__container">
           <a href="#" class="contacts__popup-btn btn">Напишите нам</a>
         </div>
@@ -168,5 +168,7 @@
     </div>
   </footer>
   <script src="js/toggler.js"></script>
+  <script src="js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFp_0ekYU8yHXdl7lBPAbLc0jnf_HHquM&callback=initMap" type="text/javascript"></script>
 </body>
 </html>

@@ -2,6 +2,11 @@
 @tablet-widths: ~"(min-width: 768px)";
 @desktop-widths: ~"(min-width: 1150px)";
 
+@retina-mobile: ~"(-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px),(min-resolution: 1.5dppx) and (max-width: 767px)";
+@retina-tablet: ~"(-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px),(min-resolution: 1.5dppx) and (min-width: 768px)";
+@retina-desktop: ~"(-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1150px),(min-resolution: 1.5dppx) and (min-width: 1150px)";
+
+
 @font-size-small: 14px;
 @font-size-table: 15px;
 @font-size-medium: 16px;
@@ -9,9 +14,11 @@
 @font-size-big: 18px;
 @font-size-features: 20px;
 @font-size-into: @font-size-features;
-@font-size-heading-mobile: 26px;
+@font-size-heading-mobile: 24px;
 @font-size-heading-tablet: 40px;
 @font-size-heading-desktop: 50px;
+
+@font-family-heading: "Verdana","Geneva", sans-serif;
 
 @line-height-link: 16px;
 @line-height-tiny: 18px;

@@ -4,18 +4,18 @@
     z-index: 10;
 
     &__logo {
-      padding-top: 22px;
-      padding-bottom: 12px;
+      padding-top: 21px;
+      padding-bottom: 14px;
       text-align: center;
     }
 
     &__toggler {
       position: absolute;
       padding: 0;
-      top: 30px;
+      top: 16px;
       right: 30px;
-      width: 20px;
-      height: 20px;
+      width: 40px;
+      height: 40px;
       border: none;
       outline: none;
       background-color: transparent;
@@ -43,13 +43,12 @@
       display: block;
     }
 
-
-    &--opened &__toggler:before {
+    &--opened &__toggler::before {
       content: "";
       position: absolute;
-      top: 10px;
-      left: 0;
-      width: 22px;
+      top: 23px;
+      left: 15px;
+      width: 28px;
       height: 2px;
       background-color: @color-black;
       transform: rotate(45deg);
@@ -58,24 +57,30 @@
     &--opened &__toggler::after {
       content: "";
       position: absolute;
-      top: 10px;
-      left: 0;
-      width: 22px;
+      top: 23px;
+      left: 15px;
+      width: 28px;
       height: 2px;
       background: @color-black;
       transform: rotate(-45deg);
     }
 
+    &--opened &__toggler::before,
+    &--opened &__toggler::after {
+      transition: all 0.2s ease-in;
+    }
+
     &--closed &__toggler::before {
       content: "";
       position: absolute;
-      top: 2px;
-      left: 0;
-      width: 20px;
+      top: 15px;
+      left: 18px;
+      width: 21px;
       height: 2px;
       background: @color-black;
-      box-shadow: 0 6.5px 0 0 @color-black,
-      0 13px 0 0 @color-black;
+      box-shadow: 0 6px 0 0 @color-black,
+      0 12px 0 0 @color-black;
+      transition: all 0.2s ease-in;
     }
 
     &--nojs &__toggler {
@@ -214,6 +219,10 @@
 
       &:active {
         color: rgba(0,0,0,0.3);
+      }
+
+      &--right {
+        width: 153px;
       }
     }
 
