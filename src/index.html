@@ -166,10 +166,35 @@
             </div>
             <div class="main-footer__copyright">
                 <span class="main-footer__copyright-text">Разработано</span>
-                <a href="#" class="main-footer__copyright-link">HTML Academy</a>
+                <a href="https://github.com/webistomin" class="main-footer__copyright-link">Alexey Istomin https://github.com/webistomin</a>
             </div>
         </div>
     </footer>
+
+    <div class="popup-offer">
+      <h2 class="popup-offer__heading">Добавить в корзину</h2>
+      <form class="popup-offer__form" action="#" method="get">
+        <div class="popup-offer__form-title">Выберите размер:</div>
+        <div class="popup-offer__field-wrapper">
+          <label class="popup-offer__radio-wrapper">
+            <input type="radio" name="popup-offer" value="s">
+            <span class="popup-offer__text">S</span>
+          </label>
+          <label class="popup-offer__radio-wrapper">
+            <input type="radio" name="popup-offer" value="m" checked>
+            <span class="popup-offer__text">M</span>
+          </label>
+          <label class="popup-offer__radio-wrapper">
+            <input type="radio" name="popup-offer" value="l">
+            <span class="popup-offer__text">L</span>
+          </label>
+        </div>
+        <input class="popup-offer__submit" type="submit" value="Добавить">
+      </form>
+    </div>
+
+    <div class="overlay"></div>
+
     <script src="js/script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFp_0ekYU8yHXdl7lBPAbLc0jnf_HHquM&callback=initMap" type="text/javascript"></script>
 </body>
