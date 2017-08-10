@@ -46,6 +46,17 @@
     outline: none;
     background-color: transparent;
     background-image: url("../img/icon-play.svg");
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.2s;
+    }
+
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.6;
+      transition: all 0.2s;
+    }
   }
 
   &__text {
@@ -121,6 +132,11 @@
       box-sizing: border-box;
       min-height: 455px;
       padding-right: 51px;
+
+      &:hover {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+        transition: all 0.2s;
+      }
     }
 
     &__heading {
