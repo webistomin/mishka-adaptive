@@ -24,11 +24,9 @@ else if (document.querySelector(".catalog__item-cart")) {
 
 overlay.addEventListener("click", function(event) {
   event.preventDefault();
-
   if (overlay.classList.contains("overlay--show")) {
     overlay.classList.remove("overlay--show");
   }
-
   if (modal.classList.contains("popup-offer--show")) {
     modal.classList.remove("popup-offer--show");
   }
@@ -36,11 +34,9 @@ overlay.addEventListener("click", function(event) {
 
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
-
     if (overlay.classList.contains("overlay--show")) {
       overlay.classList.remove("overlay--show");
     }
-
     if (modal.classList.contains("popup-offer--show")) {
       modal.classList.remove("popup-offer--show");
     }

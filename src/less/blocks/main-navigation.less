@@ -131,21 +131,16 @@
 
     &__search {
       position: relative;
+    }
 
-      &::after {
+    &__icon-search {
         content: "";
         position: absolute;
         top: 30px;
         left: 32px;
-
         width: 17.6px;
         height: 17.6px;
-
-        background-color: transparent;
-        background-image: url("../img/icon-search.svg");
-        background-repeat: no-repeat;
         opacity: 0.2;
-      }
     }
 
     &__search-field {
@@ -155,21 +150,17 @@
     &__cart {
       position: relative;
       z-index: 1;
+      border-bottom: 1px solid @color-grey-border;
+    }
 
-      &::after {
+    &__icon-cart {
         content: "";
         position: absolute;
         top: 30px;
         left: 32px;
-
         width: 20.294px;
         height: 18.849px;
-
-        background-color: transparent;
-        background-image: url("../img/icon-cart.svg");
-        background-repeat: no-repeat;
         opacity: 0.2;
-      }
     }
 
     &__delivery {
@@ -264,23 +255,24 @@
 
       border-right: 1px solid #ececec;
       border-left: 1px solid #ececec;
+    }
 
-      &::before {
+
+    &__icon-search {
         content: "";
         position: absolute;
         top: 40%;
         left: 30px;
-
         width: 18.6px;
         height: 17.6px;
-
-        background-color: transparent;
-        background-image: url("../img/icon-search.svg");
-        background-repeat: no-repeat;
-        background-position: center, center;
         opacity: 0.2;
-      }
     }
+
+    &__search:hover &__icon-search {
+      fill: @color-main;
+      opacity: 1;
+    }
+
 
     &__search-link {
       position: relative;
@@ -297,25 +289,24 @@
 
     &__cart {
       position: relative;
-
       width: 264px;
       padding-right: 0;
       padding-left: 0;
+    }
 
-      &::before {
+    &__icon-cart {
         content: "";
         position: absolute;
         top: 40%;
         left: 32px;
-
         width: 20.294px;
         height: 18.849px;
-
-        background-color: transparent;
-        background-image: url("../img/icon-cart.svg");
-        background-repeat: no-repeat;
         opacity: 0.2;
-      }
+    }
+
+    &__cart:hover &__icon-cart {
+      fill: @color-main;
+      opacity: 1;
     }
 
     &__cart-link {
