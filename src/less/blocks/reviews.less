@@ -1,5 +1,6 @@
 .reviews {
   position: relative;
+
   padding-top: 30px;
   padding-bottom: 55px;
 
@@ -7,8 +8,10 @@
     content: "";
     position: absolute;
     bottom: 0;
+
     width: 100%;
     height: 23px;
+
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: 100% 100%;
   }
@@ -20,6 +23,7 @@
   &__heading {
     margin: 0;
     margin-bottom: 40px;
+
     font-size: @font-size-heading-mobile;
     line-height: @line-height-heading-mobile;
     font-family: @font-family-heading;
@@ -32,11 +36,11 @@
   }
 
   &__author {
+    font-weight: 700;
     font-size: @font-size-small;
     line-height: @line-height-small;
-    font-weight: 700;
-    font-style: normal;
     color: @color-black;
+    font-style: normal;
   }
 
   &__link {
@@ -54,16 +58,18 @@
   }
 
   &__button {
+    box-sizing: border-box;
     width: 50%;
     height: 52px;
     margin-bottom: 38px;
     padding: 0;
-    box-sizing: border-box;
-    border: 1px solid @color-grey-border;
+
+    font-size: 0;
+
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center center;
-    font-size: 0;
+    border: 1px solid @color-grey-border;
     outline: none;
 
     &:hover {
@@ -77,8 +83,8 @@
 
 
     &--prev {
-      border-right: none;
       background-image: url("../img/icon-left-arrow.svg");
+      border-right: none;
     }
 
     &--next {
@@ -90,6 +96,7 @@
 @media @tablet-widths {
   .reviews {
     position: relative;
+
     padding-top: 80px;
     padding-bottom: 193px;
 
@@ -97,27 +104,29 @@
     &::before {
       content: "";
       position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
       width: 350px;
       height: 459px;
-      left: 0;
-      top: 0;
+
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
       background-size: 350px 457px;
-      z-index: -1;
     }
 
     @media @retina-tablet {
-        &::before {
+      &::before {
         background-image: url("../img/review@2x.jpg");
-        }
+      }
     }
 
     &__container {
-
       &--flex {
-        display: flex;
         position: relative;
+
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
@@ -127,6 +136,7 @@
     &__heading {
       order: 1;
       margin-bottom: 44px;
+
       font-size: @font-size-heading-tablet;
       line-height: @line-height-heading-tablet;
       font-family: "Verdana", "Arial", sans-serif;
@@ -134,8 +144,8 @@
 
     &__write {
       order: 2;
-      padding-left: 44px;
       padding-right: 44px;
+      padding-left: 44px;
     }
 
     &__quote {
@@ -144,15 +154,18 @@
     }
 
     &__buttons {
-      width: 167px;
-      font-size: 0;
       position: absolute;
       right: 0;
       bottom: 0;
+
+      width: 167px;
+
+      font-size: 0;
     }
 
     &__button {
       margin-bottom: 0;
+
       border: none;
     }
 
@@ -182,14 +195,16 @@
       &::after {
         content: "";
         position: absolute;
+        top: -78px;
+        left: 0;
+        z-index: -1;
+
         width: 350px;
         height: 459px;
-        left: 0;
-        top: -78px;
+
         background-image: url("../img/review@1x.jpg");
         background-repeat: no-repeat;
         background-size: 350px 457px;
-        z-index: -1;
       }
 
       @media @retina-desktop {

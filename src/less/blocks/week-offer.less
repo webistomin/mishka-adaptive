@@ -1,5 +1,6 @@
 .week-offer {
   position: relative;
+
   padding-top: 34px;
   padding-bottom: 55px;
 
@@ -7,8 +8,10 @@
     content: "";
     position: absolute;
     bottom: 0;
+
     width: 100%;
     height: 23px;
+
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: 100% 100%;
   }
@@ -19,8 +22,9 @@
 
   &__heading {
     margin: 0;
-    margin-left: -1px;
     margin-bottom: 8px;
+    margin-left: -1px;
+
     font-size: @font-size-heading-mobile;
     line-height: @line-height-heading-mobile;
     font-family: @font-family-heading;
@@ -28,28 +32,30 @@
   }
 
   &__title {
-    font-size: @font-size-medium;
     font-weight: 700;
+    font-size: @font-size-medium;
     line-height: 16px;
-    text-transform: uppercase;
     color: @color-title;
+    text-transform: uppercase;
   }
 
   &__description {
     padding-top: 30px;
     padding-bottom: 32px;
-    color: @color-main-text;
+
     font-size: @font-size-small;
     line-height: @line-height-small;
+    color: @color-main-text;
   }
 
   &__table {
     width: 100%;
     margin-bottom: 28px;
+
     font-size: @font-size-small;
     line-height: @line-height-table;
-    color: @color-main-text;
     text-align: left;
+    color: @color-main-text;
   }
 
   &__table-row {
@@ -71,11 +77,12 @@
 
   &__price {
     margin-bottom: 30px;
+
+    font-weight: 700;
     font-size: @font-size-medium;
     line-height: @line-height-small;
-    font-weight: 700;
-    color: @color-main-text;
     text-align: center;
+    color: @color-main-text;
   }
 
   &__btn {
@@ -88,6 +95,7 @@
 @media @tablet-widths {
   .week-offer {
     position: relative;
+
     padding-bottom: 75px;
 
     &__container {
@@ -96,6 +104,7 @@
 
     &__heading {
       margin: 0;
+
       font-size: @font-size-heading-tablet;
       line-height: @line-height-heading-tablet;
       font-family: @font-family-heading;
@@ -106,7 +115,9 @@
       position: absolute;
       top: 3.5%;
       right: 18px;
+
       width: 80px;
+
       text-align: center;
     }
 
@@ -115,16 +126,18 @@
     }
 
     &__description {
-      font-size: @font-size-medium;
-      line-height: @line-height-medium;
       padding-top: 50px;
       padding-bottom: 35px;
+
+      font-size: @font-size-medium;
+      line-height: @line-height-medium;
     }
 
     &__table {
+      margin-bottom: 61px;
+
       font-size: @font-size-table;
       line-height: @line-height-table;
-      margin-bottom: 61px;
     }
 
     .week-offer__table-col {
@@ -134,12 +147,13 @@
 
     &__image {
       position: absolute;
-      bottom: 0;
       right: 0;
+      bottom: 0;
     }
 
     &__price {
       margin-bottom: 35px;
+
       font-size: @font-size-big;
     }
   }
@@ -147,8 +161,7 @@
 
 @media @desktop-widths {
   .week-offer {
-
-  padding-bottom: 96px;
+    padding-bottom: 96px;
 
     &::after {
       background-size: contain;
@@ -180,11 +193,9 @@
     }
 
     &__image {
-      z-index: -1;
       top: -40px;
       right: -5px;
+      z-index: -1;
     }
-
-
   }
 }

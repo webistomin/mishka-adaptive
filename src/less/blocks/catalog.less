@@ -1,15 +1,16 @@
 .catalog {
-
   &__container {
     .container();
   }
 
-  &__item-container{
+  &__item-container {
     position: relative;
+
     padding-top: 22px;
-    padding-left: 26px;
     padding-right: 26px;
     padding-bottom: 30px;
+    padding-left: 26px;
+
     border: 1px solid @color-grey-border;
   }
 
@@ -23,37 +24,42 @@
 
   &__item-name {
     display: block;
-    font-family: "Verdana", sans-serif;
+
+    font-weight: 700;
     font-size: @font-size-medium;
     line-height: @line-height-small;
-    font-weight: 700;
+    font-family: "Verdana", sans-serif;
     color: @color-black;
   }
 
   &__item-description {
-    font-size: @font-size-small;
-    line-height: @line-height-medium;
     padding-bottom: 20px;
 
+    font-size: @font-size-small;
+    line-height: @line-height-medium;
   }
 
   &__item-price {
     display: block;
     padding-top: 20px;
-    font-family: @font-family-catalog;
+
     font-weight: 700;
     font-size: @font-size-small;
     line-height: @line-height-small;
+    font-family: @font-family-catalog;
     color: @color-black;
+
     border-top: 1px solid @color-grey-border;
   }
 
   &__item-cart {
-    width: 20.294px;
-    height: 18.849px;
     position: absolute;
     right: 26px;
     bottom: 32px;
+
+    width: 20.294px;
+    height: 18.849px;
+
     background-color: transparent;
     background-image: url("../img/icon-cart.svg");
   }
@@ -61,7 +67,6 @@
 
 @media @tablet-widths {
   .catalog {
-
     &__item {
       display: flex;
       flex-direction: row;
@@ -83,7 +88,6 @@
 
 @media @desktop-widths {
   .catalog {
-
     &__container {
       &--flex {
         display: flex;

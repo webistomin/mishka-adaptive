@@ -1,18 +1,22 @@
 .page-header {
+  z-index: 10;
+
   min-height: 79px;
+
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  z-index: 10;
 }
 
 @media @tablet-widths {
   .page-header {
     position: relative;
+
     border-bottom: none;
 
     &__container {
-      .container();
       max-width: 668px;
+
+      .container();
     }
   }
 }

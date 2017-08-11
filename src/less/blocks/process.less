@@ -1,28 +1,33 @@
 .process {
   &__container {
-    .container();
     border: 1px solid @color-grey-border;
+
+    .container();
   }
 
   &__heading {
     position: relative;
+
     margin: 0;
+    margin-bottom: 26px;
     padding-top: 23px;
     padding-left: 90px;
-    margin-bottom: 26px;
+
+    font-weight: 700;
     font-size: @font-size-medium;
     line-height: @line-height-small;
     font-family: @font-family-heading;
-    font-weight: 700;
     color: @color-black;
 
     &::before {
       content: "";
       position: absolute;
-      width: 32px;
-      height: 32px;
       top: 30px;
       left: 34px;
+
+      width: 32px;
+      height: 32px;
+
       background-image: url("../img/icon-video.svg");
     }
   }
@@ -37,15 +42,17 @@
 
   &__video-btn {
     position: absolute;
+    top: 40px;
+    left: 80px;
+
     width: 100.678px;
     height: 76.891px;
     padding: 0;
-    top: 40px;
-    left: 80px;
-    border: 0;
-    outline: none;
+
     background-color: transparent;
     background-image: url("../img/icon-play.svg");
+    border: 0;
+    outline: none;
 
     &:hover {
       transform: scale(1.2);
@@ -60,16 +67,17 @@
   }
 
   &__text {
+    margin-bottom: 26px;
+
     font-size: @font-size-small;
     line-height: @line-height-small;
-    margin-bottom: 26px;
   }
 
   &__description {
-    padding-left: 32px;
+    padding-top: 26px;
     padding-right: 32px;
     padding-bottom: 32px;
-    padding-top: 26px;
+    padding-left: 32px;
   }
 }
 
@@ -83,10 +91,11 @@
     }
 
     &__heading {
+      order: 2;
+      margin-bottom: 30px;
       padding-top: 46px;
       padding-left: 106px;
-      margin-bottom: 30px;
-      order: 2;
+
       font-size: @font-size-big;
 
       &::before {
@@ -105,13 +114,14 @@
     }
 
     &__description {
+      order: 3;
       padding-top: 0;
       padding-bottom: 42px;
-      order: 3;
     }
 
     &__text {
       margin-bottom: 36px;
+
       font-size: @font-size-medium;
       line-height: @line-height-medium;
     }
@@ -123,27 +133,32 @@
     margin-bottom: 105px;
 
     &__container {
+      position: relative;
+
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      align-items: flex-end;
       justify-content: flex-start;
-      position: relative;
+      align-items: flex-end;
       box-sizing: border-box;
       min-height: 455px;
       padding-right: 51px;
 
       &:hover {
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
+
+=======
+>>>>>>> 51e96a341289292fea0f6bb5a3169566ae67a5dc
         transition: all 0.2s;
       }
     }
 
     &__heading {
       width: 150px;
+      margin-right: 88px;
       padding-top: 96px;
       padding-left: 0;
-      margin-right: 88px;
 
       &::before {
         top: 46px;
@@ -152,9 +167,9 @@
     }
 
     &__description {
-      padding-left: 0;
-      padding-bottom: 0;
       padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
     }
 
     &__text {
