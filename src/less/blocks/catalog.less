@@ -56,13 +56,21 @@
     position: absolute;
     right: 26px;
     bottom: 32px;
-
     width: 20.294px;
     height: 18.849px;
+    opacity: 0.2;
 
-    background-color: transparent;
-    background-image: url("../img/icon-cart.svg");
+    &:hover {
+      fill: @color-main;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
+
+
 }
 
 @media @tablet-widths {
