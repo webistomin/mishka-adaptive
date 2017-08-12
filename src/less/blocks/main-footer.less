@@ -1,5 +1,6 @@
 .main-footer {
 
+
   margin-top: 40px;
 
   background-color: @color-bg-footer;
@@ -20,6 +21,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: baseline;
     padding-top: 28px;
     padding-right: 45px;
     padding-bottom: 24px;
@@ -29,26 +31,13 @@
   }
 
   &__social-link {
-    width: 30px;
-    height: 30px;
-
     font-size: 0;
+  }
 
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    &--insta {
-      background-image: url("../img/icon-insta.svg");
-    }
-
-    &--fb {
-      background-image: url("../img/icon-fb.svg");
-    }
-
-    &--tw {
-      background-image: url("../img/icon-twitter.svg");
-    }
+  &__icon-insta:hover,
+  &__icon-fb:hover,
+  &__icon-twitter:hover {
+    fill: @color-main;
   }
 
   &__copyright {
@@ -62,20 +51,21 @@
     padding-left: 32px;
   }
 
-  &__copyright-text {
+  &__icon-github {
+    fill: @color-main;
+    padding-left: 24px;
+  }
+
+  &__copyright-link {
+    min-height: 32px;
     font-weight: 700;
     font-size: @font-size-big;
     line-height: @line-height-tiny;
     color: @color-black;
-  }
 
-  &__copyright-link {
-    width: 30px;
-    height: 32px;
-
-    font-size: 0;
-
-    background-image: url("../img/github.svg");
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -87,15 +77,18 @@
 
     &__container {
       &--flex {
+        box-sizing: border-box;
+        height: 35px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
       }
     }
 
     &__logo {
       display: block;
+      align-self: center;
       width: 170px;
     }
 
@@ -108,10 +101,6 @@
 
     &__copyright {
       padding: 0;
-    }
-
-    &__copyright-text {
-      padding-right: 24px;
     }
   }
 }
