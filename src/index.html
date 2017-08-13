@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +7,8 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Мишка - милые штучки ручной работы для дома</title>
 </head>
-
 <body>
-
-  <!--<svg class="__icon-" width="" height="">-->
-  <!--<use x="0" y="0" xlink:href="#icon-"></use>-->
-  <!--</svg>-->
-
-  <!-- this svg is a container for svg icons and should not appear on the page.
+<!-- this svg is a container for svg icons and should not appear on the page.
 To emphasise this I use inline style="display: none" -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
   <symbol id="bg-zigzag-fill" viewBox="0 0 1150 34"><path fill="#FFF" d="M1121.252 0c-14.375 0-14.375 14-28.749 14s-14.374-14-28.748-14-14.374 14-28.748 14c-14.375 0-14.375-14-28.75-14-14.374 0-14.374 14-28.748 14S963.135 0 948.761 0s-14.374 14-28.749 14-14.375-14-28.749-14-14.374 14-28.749 14-14.375-14-28.75-14c-14.371 0-14.371 14-28.743 14-14.375 0-14.375-14-28.75-14-14.372 0-14.372 14-28.744 14-14.374 0-14.374-14-28.747-14s-14.373 14-28.747 14C675.66 14 675.66 0 661.287 0c-14.374 0-14.374 14-28.748 14-14.375 0-14.375-14-28.751-14-14.374 0-14.374 14-28.748 14S560.666 0 546.292 0s-14.374 14-28.748 14S503.17 0 488.796 0c-14.375 0-14.375 14-28.75 14-14.376 0-14.376-14-28.753-14-14.375 0-14.375 14-28.75 14S388.168 0 373.792 0c-14.375 0-14.375 14-28.75 14S330.666 0 316.291 0s-14.375 14-28.751 14c-14.376 0-14.376-14-28.753-14-14.374 0-14.374 14-28.747 14-14.375 0-14.375-14-28.75-14s-14.375 14-28.751 14c-14.377 0-14.377-14-28.754-14s-14.377 14-28.755 14c-14.378 0-14.378-14-28.756-14S71.896 14 57.518 14C43.139 14 43.139 0 28.759 0S14.38 14 0 14v20h1150V14c-14.374 0-14.374-14-28.748-14z"/></symbol>
@@ -37,16 +30,18 @@ To emphasise this I use inline style="display: none" -->
     <div class="page-header__container page-header__container--flex">
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <div class="main-navigation__logo">
+          <a href="index.html" class="main-navigation__home-link">
           <picture>
             <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
             <img class="main-navigation__logotype" src="img/logo-mobile.svg" alt="Mishka" title="Mishka">
           </picture>
+          </a>
         </div>
         <button class="main-navigation__toggler">Открыть меню</button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--border"><a href="catalog.html" class="main-navigation__link main-navigation__link--main">Каталог товаров</a></li>
-          <li class="main-navigation__item main-navigation__item--right"><a href="#" class="main-navigation__link main-navigation__link--main main-navigation__link--right">Вязание на заказ</a></li>
+          <li class="main-navigation__item main-navigation__item--right"><a href="form.html" class="main-navigation__link main-navigation__link--main main-navigation__link--right">Вязание на заказ</a></li>
         </ul>
         <ul class="main-navigation__extrablock">
           <li class="main-navigation__item main-navigation__extrablock-item main-navigation__item--hidden"><a href="#" class="main-navigation__link main-navigation__extra-link main-navigation__extra-link--first">Новые поступления</a></li>
@@ -230,7 +225,6 @@ To emphasise this I use inline style="display: none" -->
       </div>
     </div>
   </footer>
-
   <div class="popup-offer">
     <h2 class="popup-offer__heading">Добавить в корзину</h2>
     <form class="popup-offer__form" action="#" method="get">
@@ -256,5 +250,4 @@ To emphasise this I use inline style="display: none" -->
   <script src="js/script.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFp_0ekYU8yHXdl7lBPAbLc0jnf_HHquM&callback=initMap" type="text/javascript"></script>
 </body>
-
 </html>
