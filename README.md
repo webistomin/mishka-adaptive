@@ -34,7 +34,8 @@ _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`,`.csscomb.json`_
 ![alt text](src/mockup/mishka-form-desktop.jpg)
 
 
+
 [travis-image]: https://travis-ci.org/webistomin/mishka-adaptive.svg?branch=master
 [travis-url]: https://travis-ci.org/webistomin/mishka-adaptive
-[dependency-image]: https://david-dm.org/webistomin/mishka-adaptive/dev-status.svg?style=flat-square
+[dependency-image]: https://david-dm.org/webistomin/mishka-adaptive/dev-status.svg
 [dependency-url]: https://david-dm.org/webistomin/mishka-adaptive
