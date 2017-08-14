@@ -29,6 +29,8 @@ _Не удаляйте и не обращайте внимание на файл
 _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`,`.csscomb.json`_
 ---
 
+<br>
+
 ![alt text](src/mockup/mishka-index-desktop.jpg)
 ![alt text](src/mockup/mishka-catalog-desktop.jpg)
 ![alt text](src/mockup/mishka-form-desktop.jpg)
