@@ -91,7 +91,8 @@ gulp.task("copy", function() {
     "src/fonts/**/*.{woff,woff2}",
     "src/*.html",
     "src/js/*.js",
-    "src/img/*.*"
+    "src/img/*.*",
+    "src/*.png"
   ], { base: "src"})
     .pipe(gulp.dest("build"));
 });
