@@ -28,7 +28,7 @@
       width: 32px;
       height: 32px;
 
-      background-image: data-uri('image/svg+xml;charset=UTF-8',"../img/icon-video.svg");
+      background-image: data-uri("image/svg+xml;charset=UTF-8","../img/icon-video.svg");
     }
   }
 
@@ -50,18 +50,20 @@
     padding: 0;
 
     background-color: transparent;
-    background-image: data-uri('image/svg+xml;charset=UTF-8',"../img/icon-play.svg");
+    background-image: data-uri("image/svg+xml;charset=UTF-8","../img/icon-play.svg");
     border: 0;
     outline: none;
 
     &:hover {
       transform: scale(1.2);
+
       transition: all 0.2s;
     }
 
     &:active {
       transform: scale(0.8);
       opacity: 0.6;
+
       transition: all 0.2s;
     }
   }
@@ -146,6 +148,7 @@
 
       &:hover {
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+
         transition: all 0.2s;
       }
     }
