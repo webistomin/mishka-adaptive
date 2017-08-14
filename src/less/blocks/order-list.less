@@ -1,6 +1,6 @@
 .order-list {
 
-  &__container {
+  &__wrapper {
     .container();
   }
 
@@ -8,5 +8,14 @@
     font-size: @font-size-small;
     line-height: @line-height-small;
     margin-bottom: 25px;
+  }
+}
+
+@media @tablet-widths {
+  .order-list {
+    &__heading {
+      font-size: @line-height-form-heading;
+      line-height: @line-height-medium;
+    }
   }
 }

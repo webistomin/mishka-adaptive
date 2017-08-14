@@ -80,8 +80,9 @@ To emphasise this I use inline style="display: none" -->
       </div>
     </section>
     <section class="order-list">
-      <div class="order-list__container">
+      <div class="order-list__wrapper">
         <p class="order-list__heading">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
           <form action="#" class="order-form">
             <section class="order-form__section order-form__section--white">
               <div class="order-form__wrapper">
@@ -93,7 +94,7 @@ To emphasise this I use inline style="display: none" -->
                 </div>
                 <div class="order-form__group order-form__group--last">
                   <input type="radio" name="type" id="toy" class="order-form__radio">
-                  <label for="toy" class="order-form__label order-form__label--radio">Детская игрушка</label>
+                  <label for="toy" class="order-form__label order-form__label--radio order-form__label--last">Детская игрушка</label>
                 </div>
               </div>
               </div>
@@ -118,11 +119,11 @@ To emphasise this I use inline style="display: none" -->
                   <input type="checkbox" name="black" id="black" class="order-form__checkbox">
                   <label for="black" class="order-form__label order-form__label--checkbox">Черный</label>
                 </div>
-                <div class="order-form__group order-form__group--margin">
+                <div class="order-form__group order-form__group--margin order-form__group--nomargin">
                   <input type="checkbox" name="pink" id="pink" class="order-form__checkbox">
                   <label for="pink" class="order-form__label order-form__label--checkbox">Розовый</label>
                 </div>
-                <div class="order-form__group order-form__group--margin">
+                <div class="order-form__group order-form__group--margin order-form__group--nomargin">
                   <input type="checkbox" name="orange" id="orange" class="order-form__checkbox">
                   <label for="orange" class="order-form__label order-form__label--checkbox">Оранжевый</label>
                 </div>
@@ -134,47 +135,53 @@ To emphasise this I use inline style="display: none" -->
               <div class="order-form__title">ФИО</div>
               <div class="order-form__inputs">
                 <div class="order-form__group order-form__group--inputs">
-                  <label for="surname" class="order-form__label">Фамилия:</label>
-                  <input type="text" name="surname" id="surname" class="order-form__input" placeholder="Укажите фамилию" required>
+                  <label for="surname" class="order-form__label order-form__label--padding order-form__label--flexstart">Фамилия:</label>
+                  <input type="text" name="surname" id="surname" class="order-form__input order-form__input--flexstart" placeholder="Укажите фамилию" required>
                 </div>
                 <div class="order-form__group order-form__group--inputs">
-                  <label for="name" class="order-form__label">Имя:</label>
+                  <label for="name" class="order-form__label order-form__label--padding">Имя:</label>
                   <input type="text" name="name" id="name" class="order-form__input" placeholder="Введите ваше имя">
                 </div>
                 <div class="order-form__group order-form__group--inputs">
-                  <label for="middlename" class="order-form__label">Отчество:</label>
+                  <label for="middlename" class="order-form__label order-form__label--padding">Отчество:</label>
                   <input type="text" name="middlename" id="middlename" class="order-form__input" placeholder="Отчество, если желаете">
                 </div>
               </div>
               </div>
             </section>
-            <section class="order-form__section order-form__section--grey">
+            <section class="order-form__section order-form__section--grey order-form__section--pb">
               <div class="order-form__wrapper">
               <div class="order-form__title">Тел</div>
+                <div class="order-form__contacts">
               <div class="order-form__group order-form__group--inputs">
                 <input type="tel" name="tel" id="tel" class="order-form__input order-form__input--tel order-form__input--padding" placeholder="+7 XXX XX XX" required>
               </div>
+                </div>
               </div>
             </section>
-            <section class="order-form__section order-form__section--grey">
+            <section class="order-form__section order-form__section--grey order-form__section--pt">
               <div class="order-form__wrapper">
               <div class="order-form__title">e-mail</div>
+                <div class="order-form__contacts">
               <div class="order-form__group order-form__group--inputs">
                 <input type="email" name="email" id="email" class="order-form__input order-form__input--email order-form__input--padding" placeholder="Ваш e-mail" required>
               </div>
+                </div>
               </div>
             </section>
-            <section class="order-form__section order-form__secrion--white">
+            <section class="order-form__section order-form__section--white ">
               <div class="order-form__wrapper">
               <div class="order-form__title">Доп</div>
+                <div class="order-form__contacts">
               <div class="order-form__group order-form__group--padding">
                 <textarea name="wishes" id="wishes" cols="30" rows="10" class="order-form__textarea" placeholder="Опишите ваши пожелания к заказу"></textarea>
               </div>
+                </div>
               </div>
             </section>
-            <section class="order-form__section order-form__section--white">
+            <section class="order-form__section order-form__section--white order-form__section--pt order-form__section--pb">
               <div class="order-form__wrapper">
-              <div class="order-form__group order-form__group--inputs">
+              <div class="order-form__group order-form__group--inputs order-form__group--flex">
                 <button type="submit" class="order-form__button btn">Отправить заказ</button>
                 <div class="order-form__requirement">
                   <span class="order-form__requirement-text">Все поля являются обязательными</span>
@@ -183,7 +190,6 @@ To emphasise this I use inline style="display: none" -->
               </div>
             </section>
           </form>
-      </div>
     </section>
 
   </main>
