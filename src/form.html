@@ -115,7 +115,7 @@ To emphasise this I use inline style="display: none" -->
                   <input type="checkbox" name="tiffany" id="tiffany" class="order-form__checkbox">
                   <label for="tiffany" class="order-form__label order-form__label--checkbox">&laquo;Тиффани&raquo;</label>
                 </div>
-                <div class="order-form__group order-form__group--margin">
+                <div class="order-form__group order-form__group--margin order-form__group--desk">
                   <input type="checkbox" name="black" id="black" class="order-form__checkbox">
                   <label for="black" class="order-form__label order-form__label--checkbox">Черный</label>
                 </div>
@@ -140,7 +140,7 @@ To emphasise this I use inline style="display: none" -->
                 </div>
                 <div class="order-form__group order-form__group--inputs">
                   <label for="name" class="order-form__label order-form__label--padding">Имя:</label>
-                  <input type="text" name="name" id="name" class="order-form__input" placeholder="Введите ваше имя">
+                  <input type="text" name="name" id="name" class="order-form__input" placeholder="Введите ваше имя" required>
                 </div>
                 <div class="order-form__group order-form__group--inputs">
                   <label for="middlename" class="order-form__label order-form__label--padding">Отчество:</label>
@@ -154,7 +154,7 @@ To emphasise this I use inline style="display: none" -->
               <div class="order-form__title">Тел</div>
                 <div class="order-form__contacts">
               <div class="order-form__group order-form__group--inputs">
-                <input type="tel" name="tel" id="tel" class="order-form__input order-form__input--tel order-form__input--padding" placeholder="+7 XXX XX XX" required>
+                <input type="tel" name="tel" id="tel" class="order-form__input order-form__input--tel order-form__input--padding" pattern="\D7[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="+7 XXX XXX XX XX" required>
               </div>
                 </div>
               </div>

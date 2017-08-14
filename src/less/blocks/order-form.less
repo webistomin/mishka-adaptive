@@ -112,7 +112,7 @@
         width: 32.666px;
         height: 22.742px;
         border-radius: 50%;
-        background-image: url("../img/icon-tick.svg");
+        background-image: data-uri('image/svg+xml;charset=UTF-8',"../img/icon-tick.svg");
       }
     }
   }
@@ -153,15 +153,17 @@
     }
 
     &--tel {
-       background-image: url("../img/icon-phone.svg");
+       background-image: data-uri('image/svg+xml;charset=UTF-8',"../img/icon-phone.svg");
        background-repeat: no-repeat;
        background-position: 96% 70%;
+       opacity: 0.2;
      }
 
     &--email {
-      background-image: url("../img/icon-mail.svg");
+      background-image: data-uri('image/svg+xml;charset=UTF-8',"../img/icon-mail.svg");
       background-repeat: no-repeat;
       background-position: 96% 77%;
+      opacity: 0.2;
     }
   }
 
@@ -253,6 +255,14 @@
         padding-left: 80px;
         margin-bottom: 50px;
 
+        &:hover::before {
+          border-color: @color-main;
+        }
+
+        &:active::before {
+          border-color: @color-grey-border;
+        }
+
         &::before {
           position: absolute;
           top: -15px;
@@ -279,6 +289,15 @@
 
       &--checkbox {
         padding-left: 18px;
+
+        &:hover::before {
+          border-color: @color-main;
+        }
+
+        &:active::before {
+          border-color: @color-grey-border;
+        }
+
         &::before {
           position: absolute;
           top: -15px;
@@ -298,7 +317,7 @@
           width: 32.666px;
           height: 22.742px;
           border-radius: 50%;
-          background-image: url("../img/icon-tick.svg");
+          background-image: data-uri('image/svg+xml;charset=UTF-8',"../img/icon-tick.svg");
         }
       }
 
@@ -364,18 +383,34 @@
       opacity: 1;
       background-color: transparent;
 
+      &:hover {
+        border-color: @color-main;
+      }
+
+      &:active {
+        border-color: @color-main;
+      }
+
+      &:valid {
+        border-color: @color-main
+      }
+
+      &:invalid {
+        border-color: @input-error;
+      }
+
       &--flexstart {
         align-self: flex-start;
       }
 
       &--tel {
-        background-image: url("../img/icon-phone.svg");
+        background-image: data-uri('image/svg+xml;charset=UTF-8',"../img/icon-phone.svg");
         background-repeat: no-repeat;
         background-position: 96% 70%;
       }
 
       &--email {
-        background-image: url("../img/icon-mail.svg");
+        background-image: data-uri('image/svg+xml;charset=UTF-8',"../img/icon-mail.svg");
         background-repeat: no-repeat;
         background-position: 96% 77%;
       }
@@ -389,6 +424,23 @@
       padding: 16px;
       border: 2px solid @color-black;
       vertical-align: top;
+      outline: none;
+
+      &:hover {
+        border-color: @color-main;
+      }
+
+      &:active {
+        border-color: @color-main;
+      }
+
+      &:valid {
+        border-color: @color-main
+      }
+
+      &:invalid {
+        border-color: @input-error;
+      }
     }
 
     &__button {
@@ -401,6 +453,47 @@
       line-height: @line-height-medium;
     }
 
+  }
+}
+
+@media @desktop-widths {
+  .order-form {
+    &__radios,
+    &__inputs,
+    &__contacts {
+      padding-left: 175px;
+      padding-right: 175px;
+    }
+
+    &__checkboxes {
+      padding-left: 188px;
+    }
+
+    &__group {
+      &--margin {
+        width: 220px;
+        margin-bottom: 50px;
+      }
+
+      &--nomargin {
+        margin-bottom: 0;
+      }
+
+      &--desk {
+        margin-bottom: 0;
+      }
+    }
+
+    &__checkboxes {
+      justify-content: space-evenly;
+    }
+
+    &__group {
+      &--flex {
+        padding-left: 175px;
+        padding-right: 175px;
+      }
+    }
   }
 }
 
