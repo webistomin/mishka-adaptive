@@ -29,6 +29,9 @@ _Не удаляйте и не обращайте внимание на файл
 _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`,`.csscomb.json`_
 ---
 
+![alt text](src/mockup/mishka@1x.jpg)
+---
+
 ![alt text](src/mockup/mishka-index-desktop.jpg)
 
 
@@ -38,8 +41,8 @@ _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`,`.csscomb.json`_
 
 ---
 ![alt text](src/mockup/mishka-form-desktop.jpg)
----
-![alt text](src/mockup/mishka@1x.jpg)
+
+
 
 
 [travis-image]: https://travis-ci.org/webistomin/mishka-adaptive.svg?branch=master
